@@ -1,0 +1,8 @@
+<div style="display: flex" *ngFor="let field of detail.fields; let i = index">
+    <div style="flex: 1" [hidden]="field == 'id'">
+        <strong>{{detail.headers[i]}}</strong>
+    </div>
+    <div style="flex: 8" [hidden]="field == 'id'">
+        {{detail.data[field]}}
+    </div>
+</div>
